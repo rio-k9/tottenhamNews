@@ -1,0 +1,866 @@
+/*Validator found no issues */
+
+
+/* CSS RESET lite */
+
+html,
+body,
+div,
+h1,
+p,
+a,
+video {
+
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+
+
+
+
+/* SPLASH CSS */
+
+html,
+.splashbody {
+
+  height: 100%;
+  width:100%;
+  position:relative;
+  z-index:2;
+
+}
+
+.splashcontainer {
+
+		z-index: 2;
+		position:relative;
+		background:white;
+		display:inline-block;
+		border-style:solid;
+		margin-left:21.5%;
+		margin-top:5%;
+		max-height:65%;
+		width:55%;
+		padding:2%;
+		opacity:0.4;
+}
+
+.splashcontainer:hover {
+
+	transition: 1s;
+	box-shadow: 0 0 2vw 2vh #282828, 0 0 20vw 20vh #050505, 0 0 100vw 100vh black;
+	opacity:0.975;
+}
+ 
+.containerad img {
+
+	margin-left:-0.65%;
+	border:solid;
+	border-color:black;
+	height:100%;
+	width:100%;
+	margin-right:2%;
+}
+
+
+		/* Hover attributes concurrent througohout page to add dynamic to an otherwise static page */
+
+.containerad img:hover {
+
+	box-shadow: 0 0 0.5vw 0.5vh white, 0 0 1.5vw 1.5vh #d19d2e;
+	transition:0.3s;
+
+}
+
+
+
+.buttonbox {
+
+		display:inline-block;
+		border-style:solid;
+		margin-top:2%;
+		height:7%;
+		width:95%;
+		padding-left:2%;
+		padding-right:2%;
+		background-color:white;
+}
+
+#enter {
+
+	float:right;
+	width:11%;
+
+}
+
+#premseats {
+
+	width:22%;
+
+}
+
+.buttonbox img {
+	border-style:solid;
+	border-color:gray;
+	margin-top:0.7%;
+
+
+}
+
+.buttonbox img:hover {
+
+	border-color:black;
+	border-style:solid;
+	box-shadow: 0 0 0.5vw 0.5vh white, 0 0 1vw 1vh black;
+	transition:0.3s;
+	opacity:0.7;
+
+}
+
+
+/* CSS used to have video as background */
+
+.splashvideo {
+
+	position:fixed;
+	z-index:1;
+  	top: 50%; left: 50%;	
+  	min-width: 100%;
+  	min-height: 100%;
+  	width: auto;
+  	height: auto;
+  	transform: translate(-50%, -50%);
+  	opacity:0.95;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN(CONTENT) PAGE CSS */
+
+.homepagebody {
+	background-image:url(images/homepageback.jpg);
+	background-color:gray;
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-attachment:fixed;
+
+}
+
+
+
+
+
+	/* Attributes for Top Banner / Navigation */
+
+.homebannersurround {
+	box-shadow: 0 0 .5vw .5vh white, 0 0 1.5vw 1.5vh #001C58;
+	border-radius: 25px 25px 25px 25px; 
+	width:92%;
+	margin:auto;
+	padding-right:.3%;
+}
+
+.homebanner {
+	background:#DDDDDD;
+	width:100%;
+	margin:auto;
+	border:solid;
+	border-radius: 25px 25px 0px 0px; 
+	margin-top:2%;
+}
+
+#homebannerart1 {
+
+	width:20%;
+	margin-bottom:2.34%;
+	margin-left:18%;
+
+}
+
+#homebanner {
+
+	width:20%;
+	margin-left:.8%;
+	border-radius:14px 14px 14px 14px;
+	padding:0;
+
+}
+
+#homebannerart2 {
+
+	width:20%;
+	float:right;
+	margin-right:20%;
+	margin-top:5%;
+
+}
+
+.homenav {	
+
+	text-align:center;
+	width:98%;
+	margin:auto;
+	border-bottom:solid;
+	border-left:solid;
+	border-right:solid;
+	background-color:#f7f7f7;
+	padding:1%;
+	border-radius: 0px 0px 25px 25px;
+
+}
+
+	/* CSS to modify style of navigation buttons */
+.homenav ul {
+
+	list-style:none;
+	padding:0;
+	text-align:center;
+	line-height:240%;
+
+}
+
+.homenav li {
+
+	text-align:center;
+	display:inline-block;
+	padding-left:4%;
+	padding-right:4%;
+	font-size:.9em;
+	font-family:sans-serif;
+	font-weight:bold;
+	border-radius:14px 14px 14px 14px;
+	border-style: solid;
+	margin-left:.4%;
+	margin-right:.4%;
+
+}
+
+.homenav li:hover {
+
+	color: white;
+	background:#001C58;
+	transition:0.5s;
+	box-shadow: 0 0 .5vw .5vh white, 0 0 1.5vw 1.5vh #001C58;
+
+}
+
+.homenav a {
+
+	text-decoration:none;
+	color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+	/* Sponsor Bar focal to continuality of page and Tottenham Hotspur branding */
+.sponsorbar {
+
+	width:72%;
+	background:white;
+	border-radius: 25px 25px 25px 25px;
+	border:dotted;
+	margin:auto;
+	opacity:.5;
+	margin-top:3%;
+	text-align:center;
+	padding:.5%;
+
+}
+
+ /* Kept class the same for sponsor bars however alternated ID attributes as did not want to bloat the page with more animation than already has */
+
+#sponsorbartop:hover {
+
+	box-shadow: 0 0 .5vw .5vh white, 0 0 1.5vw 1.5vh #001C58;
+	transition:.8s;
+	opacity:1;
+	width:100%;
+	border-radius:0px 0px 0px 0px;
+	border:none;
+
+}
+
+.sponsorbar:hover {
+
+	box-shadow: 0 0 .5vw .5vh white, 0 0 1.5vw 1.5vh #001C58;
+	transition:.6s;
+	opacity:1;
+
+}
+
+
+/* To allow Sponsor buttons to scale relatively, individual classes had to be specified according to size */
+
+.sponsorsmall {
+
+	display:inline-block;
+	margin:1%;
+	margin-bottom:2%;
+	border-radius: 25px 25px 25px 25px;
+}
+
+.sponsormedium {
+
+	display:inline-block;
+	margin-bottom:1%;
+	border-radius: 25px 25px 25px 25px;
+
+}
+
+.sponsorlarge {
+
+	display:inline-block;
+	border-radius: 3px 3px 3px 3px;
+
+}
+
+/* Unique ID given to each button to produce a glow in accordance with color */
+#sponsorprem:hover {
+
+	box-shadow: 0 0 .5vw .5vh white, 0 0 1.5vw 1.5vh #37013B;
+	transition:.6s;
+
+}
+
+#sponsorcarl:hover{
+
+	box-shadow: 0 0 .5vw .5vh white, 0 0 1.5vw 1.5vh #00510E;
+	transition:.6s;
+
+}
+
+#sponsoraqua:hover{
+
+	box-shadow: 0 0 .5vw .5vh white, 0 0 1.5vw 1.5vh black;
+	transition:.6s;
+
+}
+
+#sponsormbna:hover{
+
+	box-shadow: 0 0 .5vw .5vh white, 0 0 1.5vw 1.5vh #0158A8;
+	transition:.6s;
+
+}
+
+#sponsorarmo:hover{
+
+	box-shadow: 0 0 .5vw .5vh white, 0 0 .7vw .7vh black;
+	transition:.6s;
+
+}
+
+#sponsoraia:hover{
+
+	box-shadow: 0 0 .5vw .5vh white, 0 0 .7vw .7vh #E42336;
+	transition:.6s;
+
+}
+
+#sponsortomc:hover{
+
+	box-shadow: 0 0 .5vw .5vh white, 0 0 1.8vw 1.8vh #FEF416;
+	transition:.6s;
+
+}
+
+#sponsorstub:hover{
+
+	box-shadow: 0 0 .5vw .5vh white, 0 0 1.5vw 1.5vh #37013B;
+	transition:.6s;
+
+}
+
+#sponsortyre:hover{
+	box-shadow: 0 0 .5vw .5vh white, 0 0 1.5vw 1.5vh #E42336;
+	transition:.6s;
+
+
+}
+
+#sponsoreztr:hover{
+
+	box-shadow: 0 0 .5vw .5vh white, 0 0 1.5vw 1.5vh #FEF416;
+	transition:.6s;
+}
+
+
+
+
+
+
+
+/* Overarching class that controls general theme of the article */
+
+.mainbody {
+
+	background-color:white;
+	border:solid;
+	border-radius:25px;
+	height:auto;
+	width:80%;
+	margin:auto;
+	margin-top:5%;
+	padding:2%;
+	box-shadow: 0 0 .5vw .5vh white, 0 0 1.5vw 1.5vh #001C58;
+	height:200%;
+
+}
+
+
+
+/* Ad bar to continue Tottenham Hotspur branding */
+
+.adbar1 {
+
+	display:inline-block;
+	width:25%;
+	border-left:dotted;
+	border-right:dotted;
+	border-color:#979899;
+	margin-top:5%;
+
+}
+
+.adbar1:hover {
+
+	box-shadow: 0 0 2.5vw 2.5vh white, 0 0 2vw 2vh #001C58;
+	transition:0.5s;
+
+}
+.articlead {
+
+	width: 100%;
+
+}
+
+.articlead:hover {
+
+	box-shadow: 0 0 1vw 1vh white, 0 0 1vw 1vh #001C58;
+
+}
+
+
+
+/* Article text theming */
+
+h2 {
+
+	color: #001C58 ;
+	text-decoration: underline;
+
+}
+
+.article1 {
+
+	display:inline-block;
+	width:66%;
+	margin-left:30%;
+	border-left:dotted;
+	border-right:dotted;
+	padding:2%;
+	margin-top:-107%;
+	margin-bottom:3%;
+
+}
+
+
+.victorhead {
+
+	width:95%;
+
+}
+
+.imgvictor {
+
+	width:90%;
+
+}
+
+
+
+/* Social buttons, same class and ID used regularly*/
+
+.articlesocial {
+
+	text-align:center;
+	border:dotted;
+	width:45.8%;
+	border-color:#979899;
+	padding-top:.5%;
+
+}
+
+.articlesocial:hover {
+
+	box-shadow: 0 0 2.5vw 2.5vh white, 0 0 2vw 2vh #001C58;
+	transition:0.5s;
+
+}
+#socialbutton1:hover {
+
+ 	box-shadow: 0 0 .2vw .2vh white, 0 0 1vw 1vh #4171bf;
+ 	transition:0.5s;
+}
+ 
+
+#socialbutton2:hover {
+
+ 	box-shadow: 0 0 .2vw .2vh white, 0 0 1vw 1vh #85b3fc;
+ 	transition:0.5s;
+
+}
+
+#socialbutton3:hover {
+
+ 	box-shadow: 0 0 .2vw .2vh white, 0 0 1vw 1vh #f70909;
+ 	transition:0.5s;
+
+}
+
+
+#socialbutton4:hover {
+
+ 	box-shadow: 0 0 .2vw .2vh white, 0 0 1vw 1vh #3d3d3d;
+ 	transition:0.5s;
+
+}
+
+
+
+.articlevictor {
+
+	margin-top:5%;
+
+}
+
+
+/* Further article text styling*/
+
+strong {
+
+	color: #001C58 ;
+	text-decoration: underline;
+}
+
+i {
+
+	color:#878787;
+
+}
+
+
+/*Attributes focal to the second article */
+
+.article2 {
+
+	display:inline-block;
+	width:66%;
+	border-left:dotted;
+	border-right:dotted;
+	padding:2%;
+
+}
+
+
+.walkerhead {
+
+	width:95%;
+
+}
+
+.mainimgwalker {
+
+	width:90%;
+
+}
+
+.walkerimg {
+
+	width:60%;
+
+}
+
+
+/* Moodifications to theme of former Adbar */
+
+.adbar2 {
+
+	display:inline-block;
+	width:25%;
+	border-left:dotted;
+	border-right:dotted;
+	border-color:#979899;
+	margin-left:2%;
+
+}
+
+.adbar2:hover {
+
+	box-shadow: 0 0 2.5vw 2.5vh white, 0 0 2vw 2vh #001C58;
+	transition:0.5s;
+
+}
+
+
+/* A new sponsbar class to minimise animation */
+
+.sponsorbarbottom {
+
+	width:72%;
+	background:white;
+	border-radius: 25px 25px 25px 25px;
+	border:dotted;
+	margin:auto;
+	margin-top:3%;
+	margin-bottom:5%;
+	text-align:center;
+	padding:.5%;
+	box-shadow: 0 0 .5vw .5vh white, 0 0 1.5vw 1.5vh #001C58;
+
+}
+
+
+/* Fixed Footer styling*/
+
+footer {
+	
+	bottom:0;
+	background:#001C58;
+	position:fixed;
+	border-top:solid;
+	width:100%;
+	box-shadow: 0 0 .1vw .1vh white, 0 0 .5vw .8vh #001C58;
+	text-align:center;
+	margin-bottom:-.4%;
+
+}
+
+footer ul {
+
+	list-style:none;
+
+}
+
+footer li {
+
+	text-align:center;
+	display:inline-block;
+	width: 14.27%;
+	border-left:solid;
+	border-right:solid;
+	border-width:.5px;
+	font-size:1em;
+}
+
+footer a {
+
+	color:white;
+}
+
+iframe {
+
+	position:relative;
+}
+
+/* Specific additions to alternate pages */
+
+#teamarticle {
+
+	text-align:center;
+}
+
+#teamarticle img {
+
+	width:80%;
+}
+
+
+/* Media Queries - Gracefully Degrading - Descending through breakpoints */
+
+
+
+	/* Alters article social bar to stay relative */
+
+@media screen and (max-width:1336px) {
+ 
+	.articlesocial {
+		width:70%;
+		text-align:center;
+
+}
+}
+
+	/* Adjusted Youtube frame (forces relativity on pre-set frame specifications) */
+@media screen and (max-width:1028px){
+
+
+	iframe {
+		width:90%;
+
+}
+}
+
+/* Breakpoint for wallpaper adjusted to  */
+@media screen and (max-width:1024px){
+
+	.homepagebody {
+		background-size:1300px;
+		background-position:center;
+
+}
+
+	.mainbody {
+
+		width:98%;
+
+}
+}
+
+/* Breakpoint for readable text reached */
+@media screen and (max-width:800px) {
+
+	.article1 {
+
+		width: 95%;
+		margin:auto;
+}
+
+	.article2 {
+
+		width: 95%;
+		margin:auto;
+}
+
+	.adbar1 {
+
+		display:none;
+}
+
+	.adbar2{
+
+		display:none;
+}
+
+	.sponsorbar {
+
+		width:98%;
+		margin-left:auto;
+		margin-right:auto;
+}
+	.sponsorbarbottom {
+
+		width:98%;
+		margin-left:auto;
+		margin-right:auto;
+}
+}
+
+/*Fixed-footer and banner breakpoint reached, now positioned at bottom of page and set to a relative and readable format (Phones) */
+@media screen and (max-width:620px){
+
+	footer {
+
+		position:relative;
+		width:100%;
+
+}
+
+footer li {
+
+		width:20%;
+		border:solid;
+		border-width:.1em;
+
+}
+
+
+	.homepagebody {
+
+		background-size:1600px;
+		background-position:center;
+}
+
+	.homebannersurround {
+		padding-right:1%;
+
+}
+}
+
+/* further accomodations for smaller devices on market */
+
+@media screen and (max-width:495px){
+
+	.articlesocial {
+		width:95%;
+
+}
+
+	#socialbutton4 {
+		display:none;
+
+}
+
+	footer {
+
+		width:98%;
+		margin:auto;
+		padding-bottom:1%;
+		margin-bottom:1%;
+
+}
+
+	footer ul {
+		padding:0;
+		width:95%;
+		margin:auto;
+
+}		
+
+	footer li {
+
+		width:100%;
+		margin-left:auto;
+		margin-right:auto;
+		padding:0;
+
+}
+
+#homebannerart1 {
+
+		display:none;
+}
+
+#homebannerart2 {
+
+		display:none;
+}
+
+#homebanner {
+
+		width:60%;
+		margin-left:20%
+}	
+}
